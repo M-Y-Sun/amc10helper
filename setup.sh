@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 # create files
+mkdir lib
 touch lib/2000.txt lib/2001.txt
 
 for i in $(seq 0 21); do
@@ -31,10 +32,10 @@ for i in $(seq 0 21); do
     curl "${lead}${year}${mid}B${trail}" | grep "<li>" > "lib/${year}b.txt"
 done
 
-curl "${lead}${year}${mid}B${trail}" | grep "<li>" > "lib/2015falla.txt"
-curl "${lead}${year}${mid}B${trail}" | grep "<li>" > "lib/2015fallb.txt"
-curl "${lead}${year}${mid}B${trail}" | grep "<li>" > "lib/2015springa.txt"
-curl "${lead}${year}${mid}B${trail}" | grep "<li>" > "lib/2015springb.txt"
+curl "https://artofproblemsolving.com/wiki/index.php/2021_Fall_AMC_10A_Answer_Key" | grep "<li>" > "lib/2021falla.txt"
+curl "https://artofproblemsolving.com/wiki/index.php/2021_Fall_AMC_10B_Answer_Key" | grep "<li>" > "lib/2021fallb.txt"
+curl "https://artofproblemsolving.com/wiki/index.php/2021_AMC_10A_Answer_Key" | grep "<li>" > "lib/2021springa.txt"
+curl "https://artofproblemsolving.com/wiki/index.php/2021_AMC_10A_Answer_Key" | grep "<li>" > "lib/2021springb.txt"
 
 # delete extra html and only keep the letter answer
 sed -i "" "s/				<div id=\"mw-content-text\" lang=\"en\" dir=\"ltr\" class=\"mw-content-ltr\"><div class=\"mw-parser-output\"><ol>//g" "lib/2000.txt"
@@ -64,23 +65,23 @@ for i in $(seq 0 21); do
     sed -i "" "s/<\/ol>//g" "lib/${year}b.txt"
 done
 
-sed -i "" "s/				<div id=\"mw-content-text\" lang=\"en\" dir=\"ltr\" class=\"mw-content-ltr\"><div class=\"mw-parser-output\"><ol>//g" "lib/2015falla.txt"
-sed -i "" "s/				<div id=\"mw-content-text\" lang=\"en\" dir=\"ltr\" class=\"mw-content-ltr\"><div class=\"mw-parser-output\"><ol>//g" "lib/2015fallb.txt"
-sed -i "" "s/				<div id=\"mw-content-text\" lang=\"en\" dir=\"ltr\" class=\"mw-content-ltr\"><div class=\"mw-parser-output\"><ol>//g" "lib/2015springa.txt"
-sed -i "" "s/				<div id=\"mw-content-text\" lang=\"en\" dir=\"ltr\" class=\"mw-content-ltr\"><div class=\"mw-parser-output\"><ol>//g" "lib/2015springb.txt"
-sed -i "" "s/ (Note: This problem was originally stated incorrectly, and all contestants received full credit regardless of their answer.)//g" "lib/2015falla.txt"
-sed -i "" "s/ (Note: This problem was originally stated incorrectly, and all contestants received full credit regardless of their answer.)//g" "lib/2015fallb.txt"
-sed -i "" "s/ (Note: This problem was originally stated incorrectly, and all contestants received full credit regardless of their answer.)//g" "lib/2015springa.txt"
-sed -i "" "s/ (Note: This problem was originally stated incorrectly, and all contestants received full credit regardless of their answer.)//g" "lib/2015springb.txt"
-sed -i "" "s/<li>//g" "lib/2015falla.txt"
-sed -i "" "s/<li>//g" "lib/2015fallb.txt"
-sed -i "" "s/<li>//g" "lib/2015springa.txt"
-sed -i "" "s/<li>//g" "lib/2015springb.txt"
-sed -i "" "s/<\/li>//g" "lib/2015falla.txt"
-sed -i "" "s/<\/li>//g" "lib/2015fallb.txt"
-sed -i "" "s/<\/li>//g" "lib/2015springa.txt"
-sed -i "" "s/<\/li>//g" "lib/2015springb.txt"
-sed -i "" "s/<\/ol>//g" "lib/2015falla.txt"
-sed -i "" "s/<\/ol>//g" "lib/2015fallb.txt"
-sed -i "" "s/<\/ol>//g" "lib/2015springa.txt"
-sed -i "" "s/<\/ol>//g" "lib/2015springb.txt"
+sed -i "" "s/				<div id=\"mw-content-text\" lang=\"en\" dir=\"ltr\" class=\"mw-content-ltr\"><div class=\"mw-parser-output\"><ol>//g" "lib/2021falla.txt"
+sed -i "" "s/				<div id=\"mw-content-text\" lang=\"en\" dir=\"ltr\" class=\"mw-content-ltr\"><div class=\"mw-parser-output\"><ol>//g" "lib/2021fallb.txt"
+sed -i "" "s/				<div id=\"mw-content-text\" lang=\"en\" dir=\"ltr\" class=\"mw-content-ltr\"><div class=\"mw-parser-output\"><ol>//g" "lib/2021springa.txt"
+sed -i "" "s/				<div id=\"mw-content-text\" lang=\"en\" dir=\"ltr\" class=\"mw-content-ltr\"><div class=\"mw-parser-output\"><ol>//g" "lib/2021springb.txt"
+sed -i "" "s/ (Note: This problem was originally stated incorrectly, and all contestants received full credit regardless of their answer.)//g" "lib/2021falla.txt"
+sed -i "" "s/ (Note: This problem was originally stated incorrectly, and all contestants received full credit regardless of their answer.)//g" "lib/2021fallb.txt"
+sed -i "" "s/ (Note: This problem was originally stated incorrectly, and all contestants received full credit regardless of their answer.)//g" "lib/2021springa.txt"
+sed -i "" "s/ (Note: This problem was originally stated incorrectly, and all contestants received full credit regardless of their answer.)//g" "lib/2021springb.txt"
+sed -i "" "s/<li>//g" "lib/2021falla.txt"
+sed -i "" "s/<li>//g" "lib/2021fallb.txt"
+sed -i "" "s/<li>//g" "lib/2021springa.txt"
+sed -i "" "s/<li>//g" "lib/2021springb.txt"
+sed -i "" "s/<\/li>//g" "lib/2021falla.txt"
+sed -i "" "s/<\/li>//g" "lib/2021fallb.txt"
+sed -i "" "s/<\/li>//g" "lib/2021springa.txt"
+sed -i "" "s/<\/li>//g" "lib/2021springb.txt"
+sed -i "" "s/<\/ol>//g" "lib/2021falla.txt"
+sed -i "" "s/<\/ol>//g" "lib/2021fallb.txt"
+sed -i "" "s/<\/ol>//g" "lib/2021springa.txt"
+sed -i "" "s/<\/ol>//g" "lib/2021springb.txt"

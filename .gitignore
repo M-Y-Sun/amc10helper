@@ -1,0 +1,42 @@
+# prerequisites
+*.d
+
+# object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# linker output
+*.ilk
+*.map
+*.exp
+
+# precompiled headers
+*.gch
+*.pch
+
+# libraries
+*.lib
+*.a
+*.la
+*.lo
+lib/
+
+# shared objects (including Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# kernel module compile results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# macOS system files
+.DS_store/
