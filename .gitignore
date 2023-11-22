@@ -23,6 +23,9 @@
 *.lo
 lib/
 
+# debug files
+*.dSYM/
+
 # shared objects (including Windows DLLs)
 *.dll
 *.so

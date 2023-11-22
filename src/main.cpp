@@ -50,7 +50,7 @@ int main(){
 
     std::string line;
     int beg;
-    printf("enter starting question\n\t> ");
+    printf("enter starting question (ex. '1' to start at question 1 or '8' to start at q8)\n\t> ");
     scanf("%d", &beg);
     int iter;
     for(iter = 0; iter < beg - 1; ++iter){
