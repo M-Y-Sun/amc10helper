@@ -13,9 +13,9 @@ This program solves the problem by retrieving the answer key and, after the answ
 
     Debian/WSL2:
     ```
-        $ sudo apt install curl
+    $ sudo apt install curl
     ```
-        macOS:
+    macOS:
     ```
     $ brew install curl
     ```
