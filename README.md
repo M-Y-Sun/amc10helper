@@ -5,15 +5,26 @@ This program solves the problem by retrieving the answer key and, after the answ
 
 ### Setup
 1. Create and```cd``` to a directory of your choice
-2. Clone the repository into the directory. Run
-```
-git clone https://github.com/s7a19t4r/amc10helper
-```
-3. Allow permissions to run the setup file. Run
-```
-chmod +x ./setup.sh
-```
-4. Set up dependencies by running 
-```
-./setup.sh
-```
+2. Clone the repository into the directory:
+    ```
+    $ git clone https://github.com/s7a19t4r/amc10helper
+    ```
+3. Install cURL:
+
+    Debian/WSL2:
+    ```
+        $ sudo apt install curl
+    ```
+        macOS:
+    ```
+    $ brew install curl
+    ```
+4. Allow permissions then run the setup file:
+    ```
+    $ chmod +x ./setup.sh
+    ```
+5. Set up dependencies by running 
+    ```
+    $ ./setup.sh
+    ```
+
