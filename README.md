@@ -19,12 +19,13 @@ This program solves the problem by retrieving the answer key and, after the answ
     ```
     $ brew install curl
     ```
-4. Allow permissions then run the setup file:
-    ```
-    $ chmod +x ./setup.sh
-    ```
-5. Set up dependencies by running 
+4. Set up dependencies by running 
     ```
     $ ./setup.sh
     ```
+    If permission to run file is denied, run
+    ```
+    $ chmod +x ./setup.sh
+    ```
+    then run script again
 
