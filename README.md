@@ -1,6 +1,6 @@
 AMC 10 Helper
 ============
-A program to help train for AMC 10, AMC 12, or AIME. Whenever one gets an answer and wants to check if it's correct, the answer has to be given away if you only have the answer key, which takes away the opportunity to try again.
+A program to help train for AMC 10. Whenever one gets an answer and wants to check if it's correct, the answer has to be given away if you only have the answer key, which takes away the opportunity to try again.
 This program solves the problem by retrieving the answer key and, after the answer is inputted, tells if it is correct or not.
 
 ### Setup
